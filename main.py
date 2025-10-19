@@ -2,8 +2,12 @@ import init_django_orm  # noqa: F401
 from django.db.models import QuerySet
 from db.models import Actor, Genre
 import sys
-import legacy as cgi
-sys.modules["cgi"] = cgi
+
+try:
+    import cgi
+except ImportError:
+    import legacy as cgi
+    sys.modules["cgi"] = cgi
 
 
 def main() -> QuerySet:
