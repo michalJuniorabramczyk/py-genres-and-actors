@@ -17,7 +17,7 @@ def main() -> QuerySet:
 
     Actor.objects.get_or_create(first_name="George", last_name="Klooney")
     Actor.objects.get_or_create(first_name="Kianu", last_name="Reverse")
-    Actor.objects.get_or_create(first_name="Scarlet", last_name="Kegan")
+    Actor.objects.get_or_create(first_name="Scarlett", last_name="Keegan")
     Actor.objects.get_or_create(first_name="Will", last_name="Smith")
     Actor.objects.get_or_create(first_name="Jaden", last_name="Smith")
     Actor.objects.get_or_create(first_name="Scarlett", last_name="Johansson")
